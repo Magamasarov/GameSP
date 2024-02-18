@@ -1,0 +1,224 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#loginScreen {
+  padding: 40px;
+  display: flex;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.map1 {
+  background-image: url('./image/map1.jpg');
+}
+
+.map2 {
+  background-image: url('./image/map2.png.~');
+}
+
+.map3 {
+  background-image: url('./image/map3.jpg');
+}
+
+body {
+  background-image: url('./image/map1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 19px;
+  max-width: 1000px;
+  background-color: #ffffff52;
+  border: 1px solid black;
+}
+
+.wrap_game {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+#gameField {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-size: cover;
+}
+
+.finish {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('./image/finsih4.png');
+  background-size: cover;
+  animation: rotate 2s infinite linear;
+}
+
+.monster {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-image: url('./image/free-icon-zombie-2332812.png');
+  background-size: cover;
+  animation: monsterAnimation 1s infinite alternate;
+}
+
+@keyframes monsterAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(20px) rotate(90deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.trap {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url('./image/free-icon-trap-4293856.png');
+  background-size: cover;
+  animation: trapAnimation 1s infinite alternate;
+}
+
+@keyframes trapAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.player {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('./image/spiderman.png');
+  background-size: cover;
+  animation: playerAnimation 1s infinite alternate;
+}
+
+@keyframes playerAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+#resultScreen {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#loginScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.custom-menu {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Остальные стили могут быть добавлены по вашему желанию */
+
+.text {
+  padding: 100px;
+}
